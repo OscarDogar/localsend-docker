@@ -1,0 +1,7 @@
+services:
+  localsend:
+    image: ghcr.io/oscardogar/localsend-docker
+    container_name: localsend
+    restart: unless-stopped
+    ports:
+      - "8080:80"
